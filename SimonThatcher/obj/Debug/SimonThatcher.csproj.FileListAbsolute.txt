@@ -8,3 +8,4 @@ C:\Users\palla\Documents\Coding\shisharp\SimonThatcher\SimonThatcher\obj\Debug\S
 C:\Users\palla\Documents\Coding\shisharp\SimonThatcher\SimonThatcher\obj\Debug\SimonThatcher.csproj.CoreCompileInputs.cache
 C:\Users\palla\Documents\Coding\shisharp\SimonThatcher\SimonThatcher\obj\Debug\SimonThatcher.exe
 C:\Users\palla\Documents\Coding\shisharp\SimonThatcher\SimonThatcher\obj\Debug\SimonThatcher.pdb
+C:\Users\palla\Documents\Coding\shisharp\SimonThatcher\SimonThatcher\obj\Debug\SimonThatcher.StartSimon.resources
