@@ -47,7 +47,7 @@
             this.sButton.BackColor = System.Drawing.Color.Lime;
             this.sButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.sButton.Location = new System.Drawing.Point(319, 313);
+            this.sButton.Location = new System.Drawing.Point(539, 311);
             this.sButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sButton.Name = "sButton";
             this.sButton.Size = new System.Drawing.Size(136, 74);
@@ -65,7 +65,7 @@
             // 
             this.green.BackColor = System.Drawing.Color.Transparent;
             this.green.Image = global::SimonThatcher.Properties.Resources.green_off;
-            this.green.Location = new System.Drawing.Point(273, 53);
+            this.green.Location = new System.Drawing.Point(493, 51);
             this.green.Margin = new System.Windows.Forms.Padding(4);
             this.green.Name = "green";
             this.green.Size = new System.Drawing.Size(113, 106);
@@ -78,7 +78,7 @@
             // 
             this.blue.BackColor = System.Drawing.Color.Transparent;
             this.blue.Image = global::SimonThatcher.Properties.Resources.blue_off;
-            this.blue.Location = new System.Drawing.Point(393, 165);
+            this.blue.Location = new System.Drawing.Point(613, 163);
             this.blue.Margin = new System.Windows.Forms.Padding(4);
             this.blue.Name = "blue";
             this.blue.Size = new System.Drawing.Size(117, 106);
@@ -90,7 +90,7 @@
             // yellow
             // 
             this.yellow.Image = global::SimonThatcher.Properties.Resources.yellow_off;
-            this.yellow.Location = new System.Drawing.Point(273, 165);
+            this.yellow.Location = new System.Drawing.Point(493, 163);
             this.yellow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.yellow.Name = "yellow";
             this.yellow.Size = new System.Drawing.Size(113, 106);
@@ -102,7 +102,7 @@
             // red
             // 
             this.red.Image = global::SimonThatcher.Properties.Resources.red_off;
-            this.red.Location = new System.Drawing.Point(393, 53);
+            this.red.Location = new System.Drawing.Point(613, 51);
             this.red.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.red.Name = "red";
             this.red.Size = new System.Drawing.Size(117, 106);
@@ -116,7 +116,7 @@
             this.turnLabel.Font = new System.Drawing.Font("Pristina", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.turnLabel.Location = new System.Drawing.Point(12, 9);
             this.turnLabel.Name = "turnLabel";
-            this.turnLabel.Size = new System.Drawing.Size(222, 74);
+            this.turnLabel.Size = new System.Drawing.Size(474, 74);
             this.turnLabel.TabIndex = 4;
             this.turnLabel.Text = "Turn: ";
             // 
@@ -135,6 +135,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SimonMiranMeir";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.SimonMiranMeir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow)).EndInit();

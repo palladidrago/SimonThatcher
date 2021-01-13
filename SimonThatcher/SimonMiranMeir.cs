@@ -24,7 +24,7 @@ namespace SimonThatcher
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            turnLabel.Text = "Turn: " + turn + 1;
+            turnLabel.Text = "Turn: " + "Simon";
             //Define the turns as per the parameter
             this.howManyTurns = howManyTurns;
             sequenceArr = new string[howManyTurns];
@@ -64,6 +64,7 @@ namespace SimonThatcher
 
         private async void Simon_Flash()
         {
+            
             //Flashes the simon according to given string array.
             PictureBox curPictureBox;
             string curPicText;
@@ -80,18 +81,20 @@ namespace SimonThatcher
 
             turn++;
             isSimonTurn = false;
+            turnLabel.Text = "Turn: " + "Player";
             EnableButtons();
         }
 
 
         private async void simonBClick(object sender, EventArgs e)
         {
-
+            
             //Deal with clicks.
             PictureBox p = sender as PictureBox;
             p.Image = Resources.ResourceManager.GetObject(p.Name + "_on") as Image;
             await Task.Delay(300);  
             p.Image = Resources.ResourceManager.GetObject(p.Name + "_off") as Image;
+            await Task.Delay(300);
 
             if (sequenceArr[curClick] == p.Name){
                 //If right button is pressed.
@@ -99,7 +102,7 @@ namespace SimonThatcher
                 if (curClick == turn)
                 {
                     //If all the right buttons have been clicked start simon.
-                    turnLabel.Text = "Turn: " + turn+1;
+                    turnLabel.Text = "Turn: " + "Simon" ;
                     DisableButtons();
                     isSimonTurn = true;
                     curClick = 0;
@@ -131,7 +134,10 @@ namespace SimonThatcher
 
         private void ULose()
         {
+            PictureBox p= Controls[sequenceArr[curClick]] as PictureBox;
+            p.Image = Resources.ResourceManager.GetObject(p.Name + "_on") as Image;
             MessageBox.Show("You lose NIGGA");
+            
             this.Hide(); Form newStart = new StartSimon(); this.Close();
             newStart.ShowDialog();
             timer1.Stop();
@@ -143,6 +149,11 @@ namespace SimonThatcher
             this.Hide(); Form newStart = new StartSimon(); this.Close();
             newStart.ShowDialog();
             new StartSimon();
+        }
+
+        private void SimonMiranMeir_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

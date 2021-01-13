@@ -16,7 +16,7 @@ namespace SimonThatcher
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartSimon());
+            Application.Run(new  StartSimon());
         }
     }
 }
