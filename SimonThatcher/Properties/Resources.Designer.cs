@@ -93,6 +93,26 @@ namespace SimonThatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gray_circle {
+            get {
+                object obj = ResourceManager.GetObject("gray_circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gray_circle_opacity {
+            get {
+                object obj = ResourceManager.GetObject("gray circle opacity", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap green_off {
             get {
                 object obj = ResourceManager.GetObject("green_off", resourceCulture);
@@ -156,6 +176,16 @@ namespace SimonThatcher.Properties {
         internal static System.Drawing.Bitmap yellow_on {
             get {
                 object obj = ResourceManager.GetObject("yellow_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap לוגו {
+            get {
+                object obj = ResourceManager.GetObject("לוגו", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

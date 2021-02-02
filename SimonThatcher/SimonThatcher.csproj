@@ -48,12 +48,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>לוגו.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ColorSlider">
+      <HintPath>..\..\ColorSlider\bin\Release\ColorSlider.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,6 +74,11 @@
     <Compile Include="Gradient.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SimonMiranMeir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundButtons.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="StartSimon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +111,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -112,57 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="blue_half.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="blue_powered.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="blue_on.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="red_on.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="blue_off.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="blue off.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="blue on.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="green off.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="green on.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="red off.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="red on.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="yellow off.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="yellow on.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\white circle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\סמל.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Exit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="לוגו.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -175,6 +131,48 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\לוגו.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\סמל.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray circle opacity.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
